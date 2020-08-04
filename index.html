@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drone Cloud Platform</title>
     <link rel="stylesheet" href="style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
   </head>
 
   <body>
-
+    <nav>
+      <a class="logo-link container d-flex align-items-center" href="/">
+        <img src="./public/icons/logo.svg" class="drone-logo mr-3" alt="drone">
+        <h3 class="title">無人機操控平台</h3>
+      </a>
+    </nav>
+    <section id="mapbox">
+    </section>
     <script src="./main.js"></script>
   </body>
 
