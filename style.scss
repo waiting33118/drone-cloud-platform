@@ -213,20 +213,32 @@ nav {
   position: fixed;
   z-index: 50;
   @extend %standard-boxshadow;
-  .drone-logo {
-    width: 24px;
+  .logo-link {
+    .drone-logo {
+      width: 24px;
+    }
+    .title {
+      color: #8271c5;
+      font-weight: 900;
+      &:hover {
+        color: #4c27dd;
+      }
+    }
   }
-  .title {
-    color: #8271c5;
-    font-weight: 900;
+  .demo1 {
+    pointer-events: auto;
+    border-radius: 1.25rem;
+    padding: 0.5rem;
+    outline: none;
     &:hover {
-      color: #4c27dd;
+      background-color: #66b3f1;
+      cursor: pointer;
+      @extend %standard-boxshadow;
     }
   }
 }
 
 #mapbox {
-  // background-color: rgb(139, 138, 138);
   width: 100%;
   height: 100%;
 }
@@ -243,7 +255,9 @@ nav {
     border-radius: 1rem;
     outline: none;
     &:hover {
+      background-color: #66b3f1;
       cursor: pointer;
+      @extend %standard-boxshadow;
     }
   }
 }

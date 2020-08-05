@@ -704,7 +704,7 @@ a:focus {
   text-align: left;
 }
 
-nav {
+nav, nav .demo1:hover, .mapboxgl-ctrl-bottom-right .locate:hover {
   -webkit-box-shadow: 0 3px 15px 0 rgba(100, 112, 134, 0.5);
           box-shadow: 0 3px 15px 0 rgba(100, 112, 134, 0.5);
 }
@@ -741,17 +741,29 @@ nav {
   z-index: 50;
 }
 
-nav .drone-logo {
+nav .logo-link .drone-logo {
   width: 24px;
 }
 
-nav .title {
+nav .logo-link .title {
   color: #8271c5;
   font-weight: 900;
 }
 
-nav .title:hover {
+nav .logo-link .title:hover {
   color: #4c27dd;
+}
+
+nav .demo1 {
+  pointer-events: auto;
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+nav .demo1:hover {
+  background-color: #66b3f1;
+  cursor: pointer;
 }
 
 #mapbox {
@@ -775,6 +787,7 @@ nav .title:hover {
 }
 
 .mapboxgl-ctrl-bottom-right .locate:hover {
+  background-color: #66b3f1;
   cursor: pointer;
 }
 
